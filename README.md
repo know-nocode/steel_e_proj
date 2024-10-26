@@ -26,9 +26,10 @@ To run this project, you need to have Python installed on your machine. You also
 
 cmd:
 >python pip install requests untangle pandas fsspec
+
 Make sure you have access to the cloud storage libraries and have proper credentials like IAM keys, if you plan to upload files to AWS or Azure.
 
-Usage
+## Usage
 Clone the repository or download the source code.
 Navigate to the project directory.
 Update the file paths in the main() function to match your local environment.
@@ -36,24 +37,24 @@ Update the file paths in the main() function to match your local environment.
 Note:
 Uncomment the desired option in the main() function to upload the generated CSV file to a cloud storage service (AWS, Azure) or to save it to a local disk.
 
-Logging
+## Logging
 Logs are written to a file named steel.log located in the project directory. The logging level is set to INFO, which records important events in the workflow.
 
-Functions
-downXML(URL, f_loc)
+## Functions
+downXML(URL, f_loc):
 Downloads XML data from a specified URL and saves it to a local file.
 
-parXML(file_path)
+parXML(file_path):
 Parses an XML file to extract download links.
 
-extract_xml_from_zip(zip_file_path)
+extract_xml_from_zip(zip_file_path):
 Extracts XML files from a ZIP archive.
 
-xml_to_csv(xml_strings, csv_file_path)
+xml_to_csv(xml_strings, csv_file_path):
 Converts XML to a CSV file.
 
-modify_and_upload_csv_cloud(file_path, cloud_path)
+modify_and_upload_csv_cloud(file_path, cloud_path):
 Modifies a CSV file and uploads it to the cloud.
 
-Contributing
+## Contributing
 Contributions are welcome! If you have suggestions for improvements or would like to add features, please create a pull request or open an issue.
